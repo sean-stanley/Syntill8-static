@@ -13,7 +13,12 @@
 		 <link rel="stylesheet" href="css/main.css" type="text/css">
 		 <link rel="stylesheet" href="css/nav.css" type="text/css" charset="utf-8">
 		 <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen" title="no title" charset="utf-8">
-	 	 <link rel="stylesheet" href="flexslider/flexslider.css" type="text/css" media="screen" charset="utf-8">
+	 	 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" charset="utf-8">
+		 
+	     <!-- CSS for slidesjs.com example -->
+	     <link rel="stylesheet" href="css/slideshow.css">
+	     <link rel="stylesheet" href="css/font-awesome.min.css">
+		 
 	  
 	  
 
@@ -21,49 +26,55 @@
         <base href="[[++site_url]]" />
 		
 		<!-- Scripts-->
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src="flexslider/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
 		<script type="text/javascript" charset="utf-8">
-		$(document).ready(function() {
-		  $('.flexslider').flexslider({
-		    animation: "slide"
+		  $(window).load(function() {
+		    $('.flexslider').flexslider();
+			animation: "slide"
 		  });
-		});
 		</script>
+		
 </head>
 
 <body>
 	<div id="wrap" class="grid-container">
-		<div id="logo-space">
-			<a href="index.html"><img src="syntill8-logo.png" alt="Syntill8 Microcontroller IP" /></a>
+		<div id="header">
+			
+		
+			<div class="nav-container hide-on-mobile">
+				<h4> First Silicon Success. Every Time.</h4>
+				<ul id="menu-bar">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="support.html">Support</a></li>
+					<li><a href="consulting.html">Consulting</a></li>
+					<li><a href="company.html">Company</a></li>
+					<li><a href="affiliates.html">Affiliates</a></li>
+					<li class="float-right" id="contact-us-link"><a href="contact-us.html">Contact Us</a></li>
+				</ul>
+			</div>
+  		   <a href="index.html"><img src="syntill8-logo.png" alt="Syntill8 Microcontroller IP" /></a>
+			
+			<div class="nav-container hide-on-tablet hide-on-desktop grid-100">
+				<h4> First Silicon Success. Every Time.</h4>
+				<ul id="menu-bar">
+					<li><a href="index.html">Menu</a>
+				 	   <ul>
+		   					<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="products.html">Products</a></li>
+		   					<li><a href="support.html">Support</a></li>
+		   					<li><a href="consulting.html">Consulting</a></li>
+		   					<li><a href="company.html">Company</a></li>
+		   					<li><a href="affiliates.html">Affiliates</a></li>
+		   					<li class="float-right" id="contact-us-link"><a href="contact-us.html">Contact Us</a></li>
+					   </ul>
+				   </li>
+			   </ul>
+			</div>
+			
 		</div>
-		<div class="nav-container hide-on-mobile">
-			<h4> First Silicon Success. Every Time.</h4>
-			<ul id="menu-bar">
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="products.html">Products</a></li>
-				<li><a href="support.html">Support</a></li>
-				<li><a href="consulting.html">Consulting</a></li>
-				<li><a href="company.html">Company</a></li>
-				<li><a href="affiliates.html">Affiliates</a></li>
-				<li class="float-right" id="contact-us-link"><a href="contact-us.html">Contact Us</a></li>
-			</ul>
-		</div>
-		<div class="nav-container hide-on-tablet hide-on-desktop">
-			<ul id="menu-bar">
-				<li><a href="#">Menu</a>
-			 	   <ul>
-	   					<li class="active"><a href="index.html">Home</a></li>
-						<li><a href="products.html">Products</a></li>
-	   					<li><a href="support.html">Support</a></li>
-	   					<li><a href="consulting.html">Consulting</a></li>
-	   					<li><a href="company.html">Company</a></li>
-	   					<li><a href="affiliates.html">Affiliates</a></li>
-	   					<li class="float-right" id="contact-us-link"><a href="contact-us.html">Contact Us</a></li>
-				   </ul>
-			   </li>
-		   </ul>
-		</div>
+	<div class="grid-100 tablet-grid-100 mobile-grid-100">
 		<div class="flexslider">
 		  <ul class="slides">
 		    <li>
@@ -77,6 +88,7 @@
 		    </li>
 		  </ul>
 		</div>
+	</div>
 		<div id="first-title">
 		</div>
 		<div class="grid-100 tablet-grid-100 mobile-grid-100" id="first-content">
@@ -153,6 +165,25 @@
 			</div>
 		</footer>
 	</div>
+    <!-- SlidesJS Required: Link to jquery.slides.js -->
+    <script src="js/jquery.slides.min.js"></script>
+    <!-- End SlidesJS Required -->
+
+    <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+    <script>
+      $(function() {
+        $('#slides').slidesjs({
+          width: 960,
+          height: 263,
+          play: {
+            active: true,
+            auto: true,
+            interval: 4000,
+            swap: true
+          }
+        });
+      });
+    </script>
 
 </body>
 </html>

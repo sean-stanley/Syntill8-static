@@ -1,21 +1,21 @@
 #menu-bar {
-	margin: 0px auto;
-	padding: 0px 0px 0px 0px;
-  height: 3.6em;
-  width: 100%;
-  line-height: 100%;
-  border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  box-shadow: 2px 2px 3px #666666;
-  -webkit-box-shadow: 2px 2px 3px #666666;
-  -moz-box-shadow: 2px 2px 3px #666666;
-  background: -webkit-gradient(linear, left top, left bottom, from(#004b90), to(#003c73));
+	float: right;
+	padding: 0;
+  	height: 45px;
+  	line-height: 100%;
+  	border-radius: 0px;
+  	-webkit-border-radius: 0px;
+  	-moz-border-radius: 0px;
+  	box-shadow: 2px 2px 3px #666666;
+  	-webkit-box-shadow: 2px 2px 3px #666666;
+  	-moz-box-shadow: 2px 2px 3px #666666;
+  	background: -webkit-gradient(linear, left top, left bottom, from(#004b90), to(#003c73));
 	background: -moz-linear-gradient(top, #004b90 0%, #003c73 100%);
 	background: -ms-linear-gradient(top, #004b90 0%, #003c73 100%);
 	background: linear-gradient(to bottom, #004b90 0%, #003c73 100%);
-  position:relative;
-  z-index:99999;
+  	position:relative;
+  	z-index:99999;
+	margin: 0;
 }
 #menu-bar li {
   margin: 0px 0px 6px 0px;
@@ -33,13 +33,13 @@ float: right;
 
 #menu-bar a {
   font-weight: lighter;
-	font: 1.2em/2.87em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 1em "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 	font-style: normal;
 	color: #FFFDFD;
   text-decoration: none;
   display: block;
-  padding: 6px 20px 6px 20px;
-  margin: 0;
+	padding: 15px 20px;
+	margin: 0;
   margin-bottom: 6px;
   border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -50,14 +50,17 @@ float: right;
 @media screen and (max-width: 400px) {
 
 #menu-bar a {
-		font: 1.5em/2.87em helvetica;
+		font-size: 1.4em;
 		display: hidden;
 		text-align: center;
 		
+		
+		
 }
 #menu-bar {
-	height: 2.87em;
+	height: 45px;
 	display: hidden;
+	width: 100%;
 	}
 	
 #menu-bar li {
@@ -67,10 +70,6 @@ float: right;
 #menu-bar li li {
 		width: 100%;
 	}
-	
-#menu-bar {
-		height: 4em;
-		}
 	
 }
 
@@ -78,9 +77,11 @@ float: right;
 
 
 #menu-bar a {
-		font: 1.6em/2.4em helvetica;
+		font-size: 1.4em;
 		position: relative;
-	text-align: center;
+		text-align: center;
+	padding-right: 10px;
+	padding-left: 10px;
 }
 
 #menu-bar li {
@@ -92,16 +93,21 @@ float: right;
 }
 
 #menu-bar {
-	height: 4em;
-	}
+	height: 45px;
+	margin-right: auto;
+	margin-left: auto;
+	float: none;
+	clear: none;
+	width: 100%;
+}
 }
 
 @media screen and (min-width: 769px) and (max-width:1024px) {
 	#menu-bar a {
-			font: 1.2em/2.5em helvetica;
+		font-size: 0.9em;
 		}
 	#menu-bar {
-		height: 3.2em;
+		height: 45px;
 		}
 }
 
@@ -150,7 +156,7 @@ float: right;
   padding: 0;
   width: 100%;
   position: absolute;
-  top: 50px;
+  top: 40px;
   left: 0;
   border: solid 1px #B4B4B4;
   border-radius: 0px;
