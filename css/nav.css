@@ -1,5 +1,4 @@
 #menu-bar {
-	float: right;
 	padding: 0;
   	height: 45px;
   	line-height: 100%;
@@ -15,7 +14,8 @@
 	background: linear-gradient(to bottom, #004b90 0%, #003c73 100%);
   	position:relative;
   	z-index:99999;
-	margin: 0;
+	width: 788px;
+	margin-bottom: 50px;
 }
 #menu-bar li {
   margin: 0px 0px 6px 0px;
@@ -60,7 +60,7 @@ float: right;
 #menu-bar {
 	height: 45px;
 	display: hidden;
-	width: 100%;
+	width: 145px;
 	}
 	
 #menu-bar li {
@@ -94,10 +94,6 @@ float: right;
 
 #menu-bar {
 	height: 45px;
-	margin-right: auto;
-	margin-left: auto;
-	float: none;
-	clear: none;
 	width: 100%;
 }
 }
@@ -108,6 +104,7 @@ float: right;
 		}
 	#menu-bar {
 		height: 45px;
+		width: 630px;
 		}
 }
 

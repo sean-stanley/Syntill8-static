@@ -203,6 +203,11 @@ small {
 	float: right;
 }
 
+div#logo-space {
+	position: absolute;
+		
+}
+
 div.flexslider img{
 	margin: 0;
 	padding: 0;
@@ -324,7 +329,7 @@ div#header {
 }
 
 div.nav-container {
-		
+	margin-left: 170px;
 }
 
 /* @end */
@@ -513,9 +518,18 @@ h2 {
 h3 {
 	font-size: 1em;
 }
+
+h4 {
+	font-size: 0.7em;
+}
+
 p, li {
 	font-size: 0.8em;
 }
+.nav-container {
+	width: 340px;
+}
+
 #nav-small {
 	float: none;
 	width: 100%;
@@ -534,8 +548,9 @@ h2.footer {
 @media screen and (min-width: 401px) and (max-width: 768px) {
 
 div#wrap {
-		width: 85%;
+		width: 500px;
 	}
+
 h1 {
 	font-size: 1.4em;
 	}
@@ -551,12 +566,15 @@ p, li {
 
 h2.footer {
 	font-size: 0.8em;
-}
+	}
 }
 
 @media screen and (min-width: 769px) and (max-width:1024px) {
 	div#wrap {
-		width: 80%;
+		width: 800px;
+	}
+	.nav-container {
+		width: 650px;
 	}
 	h1 {
 		font-size: 1.2em;
@@ -574,8 +592,11 @@ h2.footer {
 
 @media screen and (min-width: 1025px) {
 	div#wrap {
-		width: 70%;
-		max-width: 960px;
+		width: 960px;
 	}
-	
+	.nav-container {
+		width: 870px;
+	}
+
+
 }
